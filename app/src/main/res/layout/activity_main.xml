@@ -4,42 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
 
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="0dp"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="231dp"
-        android:text="Login"
+        android:backgroundTint="#fff"
         android:onClick="login"
+        android:text="Login"
+        android:textColor="#777"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/registrar"
-        android:layout_width="0dp"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
+        android:backgroundTint="#fff"
+        android:onClick="register"
         android:text="Registrar"
+        android:textColor="#777"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
-        android:onClick="register"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <TextView
         android:id="@+id/login"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:layout_marginTop="117dp"
-        android:text="Olá"
+        android:text="Diary"
+        android:textColor="#fff"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
