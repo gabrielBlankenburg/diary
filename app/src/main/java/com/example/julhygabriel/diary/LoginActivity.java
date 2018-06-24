@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void loadNotes() {
-        Intent intent = new Intent(this, NotesActivity.class);
+        Intent intent = new Intent(this, NewNoteActivity.class);
         startActivity(intent);
     }
 }

@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         String token = sharedPreferences.getString("token", "");
 
         if (token != "") {
-            Intent intent = new Intent(this, NotesActivity.class);
+            Intent intent = new Intent(this, NewNoteActivity.class);
             startActivity(intent);
         }
 
