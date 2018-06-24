@@ -21,6 +21,7 @@
         <activity android:name=".NotesActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
+        <activity android:name=".NewNoteActivity"></activity>	
     </application>
 
 </manifest>
