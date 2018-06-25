@@ -1,10 +1,13 @@
 package com.example.julhygabriel.diary.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.julhygabriel.diary.R;
@@ -27,12 +30,14 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
         public final View mView;
 
         TextView txtTitle;
+        TextView txtContent;
 
         CustomViewHolder(View itemView) {
             super(itemView);
             mView = itemView;
 
             txtTitle = mView.findViewById(R.id.title);
+            txtContent = mView.findViewById(R.id.content);
         }
     }
 
@@ -44,9 +49,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     }
 
     @Override
-    public void onBindViewHolder(CustomViewHolder holder, int position) {
+    public void onBindViewHolder(CustomViewHolder holder, final int position) {
         holder.txtTitle.setText(dataList.get(position).getTitle());
-
+        holder.txtContent.setText(dataList.get(position).getContent());
     }
 
     @Override

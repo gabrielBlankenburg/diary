@@ -9,18 +9,27 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="244dp">
 
         <TextView
             android:id="@+id/title"
             style="@style/TextAppearance.AppCompat.Medium"
-            android:layout_width="wrap_content"
+            android:layout_width="117dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:paddingTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
             android:lines="2"
+            android:paddingTop="20dp"
             android:text="title" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="188dp"
+            android:layout_height="69dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="46dp"
+            android:text="TextView" />
 
     </RelativeLayout>
 
