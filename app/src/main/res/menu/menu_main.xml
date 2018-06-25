@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/criarNota"
+    app:showAsAction="ifRoom"
+    android:title="Criar Nota"
+    >
+</item>
+<item
+    android:id="@+id/sairConta"
+    app:showAsAction="ifRoom|withText"
+    android:title="Sair da Conta">
+</item>
+</menu>
