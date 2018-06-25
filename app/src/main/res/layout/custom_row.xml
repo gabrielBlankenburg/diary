@@ -20,7 +20,8 @@
             android:layout_centerHorizontal="true"
             android:lines="2"
             android:paddingTop="20dp"
-            android:text="title" />
+            android:text="title"
+            />
 
         <TextView
             android:id="@+id/content"

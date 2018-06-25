@@ -2,6 +2,7 @@ package com.example.julhygabriel.diary.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -51,11 +52,29 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     @Override
     public void onBindViewHolder(CustomViewHolder holder, final int position) {
         holder.txtTitle.setText(dataList.get(position).getTitle());
+        String label = getColor(dataList.get(position).getLabel());
+        int color = Color.parseColor(label);
+        holder.txtTitle.setBackgroundColor(color);
         holder.txtContent.setText(dataList.get(position).getContent());
     }
 
     @Override
     public int getItemCount() {
         return dataList.size();
+    }
+
+    public String getColor(String label) {
+        switch (label){
+            case "red":
+                return "#FF0000";
+            case "blue":
+                return "#0000FF";
+            case "green":
+                return "#00FF00";
+            case "grey":
+                return "#EEEEEE";
+            default:
+                return "#FFFFFF";
+        }
     }
 }
